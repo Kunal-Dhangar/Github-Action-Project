@@ -19,9 +19,6 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-
-    - name: Download Maven dependencies
-      run: mvn dependency:resolve  
     - name: Compile the project
       run: mvn compile 
 
